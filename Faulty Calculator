@@ -1,0 +1,43 @@
+#exercise - Faulty Calculator
+"""right answers except 45*3, 56+9, 56/6"""
+
+while(True):
+    Operator = input("Enter Operator: ")
+    number1 = int(input("Enter First Number: "))
+    number2 = int(input("Enter Second Number: "))
+    if Operator == '*':
+        if number1 == 45 and number2 == 3:
+            print(555)
+            print("Want to try again? ")
+            Reply = input("Please Tell! ")
+            if Reply == "Y":
+                continue
+            else:
+                break
+        else:
+            print(number1 * number2)
+            break
+    elif Operator == '+':
+        if number1 == 56 and number2 == 9:
+            print(77)
+            print("Want to try again? ")
+            Reply = input("Please Tell! ")
+            if Reply == "Y":
+                continue
+            else:
+                break
+        else:
+            print(number1+number2)
+            break
+    elif Operator == '/':
+        if number1 == 56 and number2 == 6:
+            print(4)
+            print("Want to try again? ")
+            Reply = input("Please Tell! ")
+            if Reply == "Y":
+                continue
+            else:
+                break
+        else:
+            print(number1 / number2)
+            break
