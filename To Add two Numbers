@@ -1,0 +1,6 @@
+# To Add Two Numbers
+
+first = int(input('Enter First Number: '))
+second = int(input('Enter Second Number: '))
+answer = first+second
+print("Sum Of These Two Numbers is: ",answer)
