@@ -17,6 +17,7 @@ while no_of_guesses <= 9:
         print("Guess Again", n, "is Smaller!", "You have only", 9-no_of_guesses , "chances left")
     else:
         print("Congratulations!")
+        print("You have taken", no_of_guesses, "guesses.")
         break
     no_of_guesses = no_of_guesses + 1
 if(no_of_guesses>9):
