@@ -1,0 +1,32 @@
+#Pattern Printing
+"""Input = Integer n
+If n <= 5
+*
+**
+***
+****
+If n > 5
+****
+***
+**
+*
+"""
+Input = int(input("Please enter the value of n: "))
+if Input <= 5:
+    for i in range(0, Input):
+        for j in range(0, i+1):
+            print("*", end=" ")
+        print("\r")
+else:
+    k = 2 * Input - 2
+    for i in range(0, Input):
+        for j in range(0, k):
+            print(end=" ")
+        k = k - 2
+        for j in range(0, i+1):
+            print("*", end=" ")
+        print("\r")
+
+
+
+
