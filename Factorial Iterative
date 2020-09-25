@@ -1,0 +1,13 @@
+# FACTORIAL FUNCTION
+def factrorial_iterative(n):
+    fac = 1
+    for i in range(n):
+        fac = fac * (i+1)
+    return fac
+
+
+Calculate = int(input("Enter the Number: "))
+print(factrorial_iterative(Calculate))
+
+
+
