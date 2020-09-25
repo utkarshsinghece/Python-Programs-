@@ -1,0 +1,27 @@
+#Guessing Game
+# -if 18 pressed by user then print congrats
+"""
+-if no. larger than 18 then ask user to try again and also print the no. of chances lest with him
+    to guess, same with number lesser than 18.
+-total no. of chances 9
+-print this in the beginning of the program
+-at every attemp tell the no. of chances left with him/her
+"""
+print("You have only 9 chances. ")
+no_of_guesses = 1
+while no_of_guesses <= 9:
+    n = int(input("Enter Your Guess: "))
+    if n > 18:
+        print("Guess Again", n, "is Bigger!", "You have only", 9-no_of_guesses, "chances left. ")
+    elif n < 18:
+        print("Guess Again", n, "is Smaller!", "You have only", 9-no_of_guesses , "chances left")
+    else:
+        print("Congratulations!")
+        break
+    no_of_guesses = no_of_guesses + 1
+if(no_of_guesses>9):
+    print("You Lost!")
+
+
+
+
