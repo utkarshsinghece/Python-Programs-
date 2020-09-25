@@ -1,4 +1,4 @@
-#Pattern Printing
+# Pattern Printing
 """Input = Integer n
 If n <= 5
 *
@@ -18,12 +18,8 @@ if Input <= 5:
             print("*", end=" ")
         print("\r")
 else:
-    k = 2 * Input - 2
-    for i in range(0, Input):
-        for j in range(0, k):
-            print(end=" ")
-        k = k - 2
-        for j in range(0, i+1):
+    for i in range(Input, 0, -1):
+        for j in range(0, i):
             print("*", end=" ")
         print("\r")
 
