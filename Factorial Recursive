@@ -1,0 +1,14 @@
+# FACTORIAL FUNCTION
+def factrorial_recursive(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factrorial_recursive(n-1)
+
+
+
+Calculate = int(input("Enter the Number: "))
+print(factrorial_recursive(Calculate))
+
+
+
